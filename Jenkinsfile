@@ -8,6 +8,10 @@ pipeline {
         ENVIRONMENTS_PATH     = "."
     }
 
+    tools {
+            terraform 1.6.4
+        }
+
     stages {
         stage('Checkout code') {
             steps {
