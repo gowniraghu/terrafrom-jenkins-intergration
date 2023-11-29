@@ -1,4 +1,5 @@
 provider "aws" {
+           source = "hashicorp/aws"
     profile = "default"
     region = "ap-south-a"
   
