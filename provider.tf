@@ -12,7 +12,7 @@ provider "aws" {
 
 resource "aws_instance" "myapp" {
     ami = "ami-0287a05f0ef0e9d9a"
-    instance_type = "t2.micor"
+    instance_type = "t2.micro"
     tags = {
         Name = "application server"
         Location = "bangalore"
