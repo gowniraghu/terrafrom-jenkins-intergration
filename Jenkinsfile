@@ -9,7 +9,7 @@ pipeline {
     }
 
     tools {
-            terraform 1.6.4
+            terraform "1.6.4"
         }
 
     stages {
