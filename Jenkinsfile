@@ -24,6 +24,7 @@ pipeline {
             steps {
                 script {
                     dir("${ENVIRONMENTS_PATH}") {
+                        sh "terraform validate"
                         sh "terraform init"
                         sh "terraform plan -out=tfplan"
                         sh "terraform apply -auto-approve tfplan"
