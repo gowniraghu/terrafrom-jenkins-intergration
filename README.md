@@ -12,13 +12,9 @@ Written Jenkins file to create ece instance.
         }
   #  Below the shell commands to in order to work for creating aws resource.
 
-  stage('Terraform Init, Plan, and Apply') {
-            steps {
-                script {
                     dir("${ENVIRONMENTS_PATH}") {
                         sh "terraform init"
                         sh "terraform plan -out=tfplan"
                         sh "terraform apply -auto-approve tfplan"
                         sh 'terraform destroy -auto-approve'
                     }
-                }
