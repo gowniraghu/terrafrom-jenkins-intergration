@@ -22,6 +22,3 @@ Written Jenkins file to create ece instance.
                         sh 'terraform destroy -auto-approve'
                     }
                 }
-            }
-        }
-    }
